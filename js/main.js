@@ -69,7 +69,7 @@
   const revealTargets = [
     '.hero .chip', '.hero__title', '.hero__sub', '.hero__cta', '.hero__stats',
     '.section__head', '.services__grid .card', '.menulist', '.menulist__item',
-    '.about__copy', '.about__card', '.case', '.contact__copy', '.contact__form',
+    '.about__copy', '.about__card', '.case', '.news-card', '.contact__copy', '.contact__form',
   ];
   $$('.hero > *').forEach((el) => el.classList.add('reveal'));
   revealTargets.forEach((sel) => $$(sel).forEach((el) => el.classList.add('reveal')));
