@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="众善合服务 — 提供软件开发、AI开发、GEO生成式引擎优化等一站式科技服务" />
+  <title>众善合服务 · 科技服务一站式解决方案 | 软件开发 · AI开发 · GEO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ============ 顶栏导航 ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand">
+        <span class="brand__mark">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366F1"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+            <circle cx="20" cy="20" r="18" stroke="url(#brandGrad)" stroke-width="2"/>
+            <path d="M11 20l6 6 12-12" stroke="url(#brandGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="20" cy="20" r="3" fill="url(#brandGrad)"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>众善合</strong>
+          <em>服务</em>
+        </span>
+      </a>
+
+      <nav class="nav__menu" aria-label="主菜单">
+        <a href="#home">首页</a>
+
+        <div class="nav__dropdown" id="navDropdown">
+          <a href="#services" class="nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            菜单服务
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="nav__dropdown-menu">
+            <a href="#svc-01"><span class="nav__ddNum">01</span>官网 / 门户开发</a>
+            <a href="#svc-02"><span class="nav__ddNum">02</span>小程序 / App 开发</a>
+            <a href="#svc-03"><span class="nav__ddNum">03</span>SaaS &amp; 中后台</a>
+            <a href="#svc-04"><span class="nav__ddNum">04</span>大模型应用</a>
+            <a href="#svc-05"><span class="nav__ddNum">05</span>AI Agent &amp; 工作流</a>
+            <a href="#svc-06"><span class="nav__ddNum">06</span>AIGC 内容工厂</a>
+            <a href="#svc-07"><span class="nav__ddNum">07</span>GEO 检索优化</a>
+            <a href="#svc-08"><span class="nav__ddNum">08</span>数字化咨询</a>
+          </div>
+        </div>
+
+        <a href="#about">关于我们</a>
+        <a href="#cases">合作案例</a>
+        <a href="#contact">联系合作</a>
+      </nav>
+
+      <button class="nav__toggle" aria-label="菜单" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="orb orb--a"></div>
+      <div class="orb orb--b"></div>
+      <div class="grid"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <span class="chip">技术服务 · 一站式交付</span>
+      <h1 class="hero__title">
+        让<span class="grad">软件开发</span> / <span class="grad">AI开发</span> / <span class="grad">GEO</span><br />
+        成为您的增长引擎
+      </h1>
+      <p class="hero__sub">
+        众善合服务，专注企业级科技服务：全栈软件开发、生成式 AI 应用、GEO（生成式引擎优化），
+        为客户打造可落地的数字化能力，交付不止于代码。
+      </p>
+      <div class="hero__cta">
+        <a href="#services" class="btn btn--primary">查看菜单服务</a>
+        <a href="#contact" class="btn btn--ghost">联系潘总 &gt;</a>
+      </div>
+
+      <ul class="hero__stats">
+        <li><strong>8+</strong><span>服务线</span></li>
+        <li><strong>200+</strong><span>交付项目</span></li>
+        <li><strong>99%</strong><span>客户续约率</span></li>
+        <li><strong>24h</strong><span>需求响应</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 菜单服务 ============ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <header class="section__head">
+        <span class="section__kicker">SERVICES · 菜单服务</span>
+        <h2 class="section__title">三大主营 · 八项服务 · 一站交付</h2>
+        <p class="section__desc">
+          从需求梳理到上线运维，我们围绕「软件开发 / AI开发 / GEO」三大主营，构建了支撑全业务周期的菜单化服务体系。
+        </p>
+      </header>
+
+      <div class="services__grid">
+        <!-- 软件开发 -->
+        <article class="card card--featured">
+          <div class="card__index">01</div>
+          <div class="card__icon">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 3l11 6v14l-11 6L5 23V9l11-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 3v12M16 15l11-6M16 15l-11-6M16 15v14" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>软件开发</h3>
+          <p>从企业官网到中后台、从 App 到小程序，再到复杂的 SaaS 与业务系统，按需定制、稳定可靠。</p>
+          <ul class="card__list">
+            <li>企业官网 / 品牌站 / H5 落地页</li>
+            <li>微信小程序 / 抖音 / 支付宝小程序</li>
+            <li>iOS / Android 原生与混合 App</li>
+            <li>SaaS 平台 / 业务中后台 / 物联网系统</li>
+            <li>企业内部 ERP / OA / CRM / 数据可视化</li>
+          </ul>
+        </article>
+
+        <!-- AI开发 -->
+        <article class="card card--featured">
+          <div class="card__index">02</div>
+          <div class="card__icon">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="13" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M7 27c1.5-4.5 5-7 9-7s7.5 2.5 9 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M21 9l-1.5-1.5M11 9l1.5-1.5M16 6V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>AI 开发</h3>
+          <p>把大模型、私有知识库、工作流 Agent 真正落到生产环境，让 AI 真正成为员工的「同事」。</p>
+          <ul class="card__list">
+            <li>大模型私有化部署 / LoRA 微调</li>
+            <li>企业知识库 / RAG 检索增强</li>
+            <li>智能客服 / 销售助手 / 文档问答</li>
+            <li>AI Agent / 工作流自动化</li>
+            <li>AIGC 内容生成 · 图像 / 视频 / 数字人</li>
+          </ul>
+        </article>
+
+        <!-- GEO -->
+        <article class="card card--featured">
+          <div class="card__index">03</div>
+          <div class="card__icon">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.5"/><path d="M5 16h22M16 5c3 3 5 7 5 11s-2 8-5 11M16 5c-3 3-5 7-5 11s2 8 5 11" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>GEO · 生成式引擎优化</h3>
+          <p>在 AI 搜索时代让品牌被看见、被引用、被推荐 — 让您的产品成为大模型的「标准答案」。</p>
+          <ul class="card__list">
+            <li>生成式引擎可见性诊断（GEO Audit）</li>
+            <li>AI 搜索词库与意图建模</li>
+            <li>品牌权威源 / 结构化数据建设</li>
+            <li>多平台分发 · DeepSeek / Kimi / 豆包</li>
+            <li>内容矩阵 · 高引用率长文 / 问答库</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- 八项细颗粒服务 -->
+      <div class="menulist">
+        <h3 class="menulist__title">菜单服务 · 八项细颗粒能力</h3>
+        <div class="menulist__grid">
+          <div class="menulist__item" id="svc-01">
+            <span class="menulist__num">01</span>
+            <h4>官网 / 门户开发</h4>
+            <p>品牌官网、集团门户、行业站点、落地页，无障碍 & SEO 全友好。</p>
+          </div>
+          <div class="menulist__item" id="svc-02">
+            <span class="menulist__num">02</span>
+            <h4>小程序 / App 开发</h4>
+            <p>微信、抖音、支付宝小程序，iOS / Android 双端 App，跨端复用。</p>
+          </div>
+          <div class="menulist__item" id="svc-03">
+            <span class="menulist__num">03</span>
+            <h4>SaaS & 中后台</h4>
+            <p>多租户架构、权限体系、后台可视化，数据驱动的运营闭环。</p>
+          </div>
+          <div class="menulist__item" id="svc-04">
+            <span class="menulist__num">04</span>
+            <h4>大模型应用</h4>
+            <p>私有化部署、RAG 检索增强、智能问答，覆盖行业大模型场景。</p>
+          </div>
+          <div class="menulist__item" id="svc-05">
+            <span class="menulist__num">05</span>
+            <h4>AI Agent & 工作流</h4>
+            <p>将大模型接入企业 IM / OA / CRM，让流程真正自动化。</p>
+          </div>
+          <div class="menulist__item" id="svc-06">
+            <span class="menulist__num">06</span>
+            <h4>AIGC 内容工厂</h4>
+            <p>图文、视频、数字人脚本，营销 / 培训 / 培训矩阵一站生成。</p>
+          </div>
+          <div class="menulist__item" id="svc-07">
+            <span class="menulist__num">07</span>
+            <h4>GEO 检索优化</h4>
+            <p>DeepSeek、豆包、Kimi、文心一言等多平台品牌可见性优化。</p>
+          </div>
+          <div class="menulist__item" id="svc-08">
+            <span class="menulist__num">08</span>
+            <h4>数字化咨询</h4>
+            <p>IT 战略、信息架构、数据治理，伴随客户从「上线」走向「好用」。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 关于我们 ============ -->
+  <section class="section about" id="about">
+    <div class="container about__inner">
+      <div class="about__copy">
+        <span class="section__kicker">ABOUT · 关于我们</span>
+        <h2 class="section__title">一家把「善」放在技术前面的<br />科技服务公司</h2>
+        <p class="section__desc">
+          <strong>众善合服务</strong> 为各行业企业提供软件开发、AI 开发、GEO 等一条龙科技服务。
+          我们相信：技术只是手段，「让客户业务真正变好」才是目的。
+        </p>
+        <ul class="about__pillars">
+          <li>
+            <span class="pill">善</span>
+            <div>
+              <h4>善意交付</h4>
+              <p>报价透明 · 进度透明 · 代码交付 · 不留暗坑。</p>
+            </div>
+          </li>
+          <li>
+            <span class="pill">合</span>
+            <div>
+              <h4>合力共创</h4>
+              <p>让客户的运营、业务、IT 团队真正「合」到一起。</p>
+            </div>
+          </li>
+          <li>
+            <span class="pill">众</span>
+            <div>
+              <h4>众智共研</h4>
+              <p>资深架构师 + AI 工程师 + 行业顾问组成的交付铁三角。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="about__card">
+        <div class="about__cardHead">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <em>众善合 · 交付看板</em>
+        </div>
+        <div class="about__cardBody">
+          <div class="kv"><span>主营</span><b>软件开发 / AI 开发 / GEO</b></div>
+          <div class="kv"><span>交付模式</span><b>项目制 · 驻场 · 订阅</b></div>
+          <div class="kv"><span>沟通窗口</span><b>潘总 · 7×12</b></div>
+          <div class="kv"><span>响应时效</span><b>24h 出方案</b></div>
+          <div class="kv"><span>代码归属</span><b>100% 交付客户</b></div>
+          <div class="kv"><span>运维支持</span><b>6 个月免费质保</b></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 合作案例 ============ -->
+  <section class="section cases" id="cases">
+    <div class="container">
+      <header class="section__head">
+        <span class="section__kicker">CASES · 合作案例</span>
+        <h2 class="section__title">已经服务过的客户场景</h2>
+        <p class="section__desc">摘选自真实合作案例，更多项目建议直接与潘总沟通。</p>
+      </header>
+
+      <div class="cases__grid">
+        <article class="case">
+          <span class="case__tag">软件开发</span>
+          <h3>某连锁茶饮品牌 · 会员小程序</h3>
+          <p>小程序会员体系、积分商城、门店核销，会员月活提升 65%。</p>
+        </article>
+        <article class="case">
+          <span class="case__tag">AI 开发</span>
+          <h3>某制造业集团 · 内部知识库</h3>
+          <p>基于 RAG 的设备维修问答助手，故障定位时长下降 47%。</p>
+        </article>
+        <article class="case">
+          <span class="case__tag">GEO</span>
+          <h3>某教育品牌 · AI 搜索可见性</h3>
+          <p>DeepSeek / Kimi 引用率优化，AI 答案首段引用率 12% → 71%。</p>
+        </article>
+        <article class="case">
+          <span class="case__tag">SaaS</span>
+          <h3>某产业园 · 招商数据中台</h3>
+          <p>多租户招商管理、合同流程、数据驾驶舱一体化平台。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 联系合作 ============ -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__copy">
+        <span class="section__kicker">CONTACT · 联系合作</span>
+        <h2 class="section__title">把您的需求 · 交给众善合</h2>
+        <p class="section__desc">
+          无论是一个想法、一个原型，还是已经在运行的系统升级，都欢迎与潘总直接对接 ——
+          我们 24 小时内给出可落地的方案。
+        </p>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__label">联系人</span>
+            <strong>潘总</strong>
+          </li>
+          <li>
+            <span class="contact__label">手机 · 微信</span>
+            <a href="tel:17785925746"><strong>17785925746</strong></a>
+            <span class="contact__hint">（同号微信，添加请备注：项目 / 公司）</span>
+          </li>
+          <li>
+            <span class="contact__label">业务方向</span>
+            <strong>软件开发 · AI 开发 · GEO · 数字化咨询</strong>
+          </li>
+          <li>
+            <span class="contact__label">响应时间</span>
+            <strong>工作日 24h · 周末 48h</strong>
+          </li>
+        </ul>
+
+        <div class="qr">
+          <div class="qr__box" aria-hidden="true">
+            <!-- 极简SVG占位二维码，外围装饰 -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100" height="100" fill="#fff"/>
+              <g fill="#0A0E27">
+                <rect x="6" y="6" width="22" height="22"/>
+                <rect x="10" y="10" width="14" height="14" fill="#fff"/>
+                <rect x="14" y="14" width="6" height="6"/>
+                <rect x="72" y="6" width="22" height="22"/>
+                <rect x="76" y="10" width="14" height="14" fill="#fff"/>
+                <rect x="80" y="14" width="6" height="6"/>
+                <rect x="6" y="72" width="22" height="22"/>
+                <rect x="10" y="76" width="14" height="14" fill="#fff"/>
+                <rect x="14" y="80" width="6" height="6"/>
+                <rect x="36" y="8" width="6" height="6"/><rect x="46" y="8" width="6" height="6"/>
+                <rect x="36" y="18" width="6" height="6"/><rect x="56" y="18" width="6" height="6"/>
+                <rect x="8" y="36" width="6" height="6"/><rect x="18" y="36" width="6" height="6"/>
+                <rect x="36" y="36" width="6" height="6"/><rect x="46" y="36" width="6" height="6"/>
+                <rect x="56" y="36" width="6" height="6"/><rect x="66" y="36" width="6" height="6"/>
+                <rect x="86" y="36" width="6" height="6"/>
+                <rect x="8" y="46" width="6" height="6"/><rect x="28" y="46" width="6" height="6"/>
+                <rect x="46" y="46" width="6" height="6"/><rect x="66" y="46" width="6" height="6"/>
+                <rect x="8" y="56" width="6" height="6"/><rect x="18" y="56" width="6" height="6"/>
+                <rect x="36" y="56" width="6" height="6"/><rect x="56" y="56" width="6" height="6"/>
+                <rect x="76" y="56" width="6" height="6"/><rect x="86" y="56" width="6" height="6"/>
+                <rect x="18" y="66" width="6" height="6"/><rect x="36" y="66" width="6" height="6"/>
+                <rect x="46" y="66" width="6" height="6"/><rect x="56" y="66" width="6" height="6"/>
+                <rect x="76" y="66" width="6" height="6"/>
+                <rect x="36" y="76" width="6" height="6"/><rect x="56" y="76" width="6" height="6"/>
+                <rect x="66" y="76" width="6" height="6"/><rect x="76" y="76" width="6" height="6"/>
+                <rect x="86" y="76" width="6" height="6"/>
+                <rect x="36" y="86" width="6" height="6"/><rect x="46" y="86" width="6" height="6"/>
+                <rect x="66" y="86" width="6" height="6"/>
+              </g>
+            </svg>
+          </div>
+          <div class="qr__text">
+            <strong>微信扫一扫</strong>
+            <em>添加潘总 · 17785925746</em>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact__form" id="contactForm" novalidate>
+        <h3>快速留言</h3>
+        <p class="contact__formHint">填写需求，潘总将亲自对接。</p>
+
+        <label>
+          <span>您的称呼</span>
+          <input type="text" name="name" placeholder="请输入您的称呼" required />
+        </label>
+        <label>
+          <span>联系方式</span>
+          <input type="text" name="contact" placeholder="手机号 / 微信号" required />
+        </label>
+        <label>
+          <span>项目类型</span>
+          <select name="type">
+            <option>软件开发</option>
+            <option>AI 开发</option>
+            <option>GEO 生成式引擎优化</option>
+            <option>AIGC 内容工厂</option>
+            <option>数字化咨询</option>
+            <option>其他</option>
+          </select>
+        </label>
+        <label>
+          <span>需求描述</span>
+          <textarea name="msg" rows="4" placeholder="简单描述您的需求 / 预算 / 上线时间"></textarea>
+        </label>
+
+        <button type="submit" class="btn btn--primary btn--block">提交需求 →</button>
+        <p class="form__tip" id="formTip">也可直接微信联系潘总：<strong>17785925746</strong></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__mark">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="url(#brandGrad)" stroke-width="2"/><path d="M11 20l6 6 12-12" stroke="url(#brandGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </span>
+          <span class="brand__text">
+            <strong>众善合</strong><em>服务</em>
+          </span>
+        </div>
+        <p class="footer__desc">软件开发 · AI 开发 · GEO — 让每一行代码，都成为客户的增长。</p>
+      </div>
+      <div>
+        <h5>菜单服务</h5>
+        <ul>
+          <li>软件开发</li><li>AI 开发</li><li>GEO 优化</li><li>数字化咨询</li>
+        </ul>
+      </div>
+      <div>
+        <h5>联系合作</h5>
+        <ul>
+          <li>潘总 · 17785925746</li><li>微信同号</li><li>7×12 响应</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>© 众善合服务 · All rights reserved.</span>
+      <span>由 <em>众善合</em> 技术团队设计与交付</span>
+    </div>
+  </footer>
+
+  <a href="#contact" class="float-cta" aria-label="联系潘总">
+    <span>联系潘总</span>
+    <em>17785925746</em>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
