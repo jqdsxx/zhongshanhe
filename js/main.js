@@ -21,31 +21,34 @@
 
   // ============ 下拉菜单（菜单服务 · 八项） ============
   const dropdown = $('#navDropdown');
-  const ddToggle = dropdown.querySelector('.nav__dropdown-toggle');
-  const mqMobile = window.matchMedia('(max-width: 960px)');
+  const ddToggle = dropdown?.querySelector('.nav__dropdown-toggle');
 
-  // 移动端：点击 toggle 展开/收起子菜单；桌面端依赖 CSS hover，保持默认跳转
-  ddToggle.addEventListener('click', (e) => {
-    if (!mqMobile.matches) return;
-    e.preventDefault();
-    const open = dropdown.classList.toggle('is-open');
-    ddToggle.setAttribute('aria-expanded', String(open));
-  });
+  if (dropdown && ddToggle) {
+    const mqMobile = window.matchMedia('(max-width: 960px)');
 
-  // 从移动切到桌面时，重置下拉状态
-  mqMobile.addEventListener('change', (e) => {
-    if (!e.matches) {
-      dropdown.classList.remove('is-open');
-      ddToggle.setAttribute('aria-expanded', 'false');
-    }
-  });
+    // 移动端：点击 toggle 展开/收起子菜单；桌面端依赖 CSS hover，保持默认跳转
+    ddToggle.addEventListener('click', (e) => {
+      if (!mqMobile.matches) return;
+      e.preventDefault();
+      const open = dropdown.classList.toggle('is-open');
+      ddToggle.setAttribute('aria-expanded', String(open));
+    });
+
+    // 从移动切到桌面时，重置下拉状态
+    mqMobile.addEventListener('change', (e) => {
+      if (!e.matches) {
+        dropdown.classList.remove('is-open');
+        ddToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
   // 点击导航内任意带 # 的链接后，关闭移动端 nav 与下拉
   const closeMobileNav = () => {
     nav.classList.remove('is-open');
     navToggle.setAttribute('aria-expanded', 'false');
-    dropdown.classList.remove('is-open');
-    ddToggle.setAttribute('aria-expanded', 'false');
+    if (dropdown) dropdown.classList.remove('is-open');
+    if (ddToggle) ddToggle.setAttribute('aria-expanded', 'false');
   };
   $$('.nav__menu > a, .nav__dropdown-menu a').forEach((a) =>
     a.addEventListener('click', closeMobileNav)
@@ -69,7 +72,7 @@
   const revealTargets = [
     '.hero .chip', '.hero__title', '.hero__sub', '.hero__cta', '.hero__stats',
     '.section__head', '.services__grid .card', '.menulist', '.menulist__item',
-    '.about__copy', '.about__card', '.case', '.news-card', '.contact__copy', '.contact__form',
+    '.about__copy', '.about__card', '.case', '.news-card', '.news-list__item', '.contact__copy', '.contact__form',
   ];
   $$('.hero > *').forEach((el) => el.classList.add('reveal'));
   revealTargets.forEach((sel) => $$(sel).forEach((el) => el.classList.add('reveal')));
